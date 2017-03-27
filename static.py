@@ -6,6 +6,7 @@ class Website():
         self.directory = directory
         self.pages = []
         self.html_names = []
+        self.menu_sep = '&nbsp;&nbsp; // &nbsp;&nbsp;'
 
         if not os.path.exists(self.directory):
             os.makedirs(self.directory)
@@ -18,6 +19,10 @@ class Website():
             copyfile('default.css', self.directory + os.sep + self.style_file)
         return self.style_file        
     
+    def menu_sep(self, sep):
+        self.menu_sep = sep
+        return self.menu_sep
+	
     def title(self, title):
         title_string = '<!DOCTYPE html>\n\
 <html>\n\
@@ -46,7 +51,7 @@ class Website():
         for i in menu_items:
             if i != menu_items[-1]:
                 menu_string += '\n\
-    <a href="{}">{}</a>&nbsp;&nbsp; // &nbsp;&nbsp;'.format(i[0], i[1])
+    <a href="{}">{}</a>{}'.format(i[0], i[1], self.menu_sep)
             else:
                menu_string += '\n\
     <a href="{}">{}</a>'.format(i[0], i[1])
