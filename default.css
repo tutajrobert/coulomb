@@ -24,15 +24,17 @@ a {
 }
 
 code {
-    color:#888;
+    color:#666;
     font-family:monospace;
     line-height:1.0;
     font-size:15px;
+	background-color: #e7e7e7;
 }
 
 footer {
     font-size:13px;
     padding: 0 0;
+	margin-top: 40px;
 }
 
 menu {
@@ -40,6 +42,7 @@ menu {
     text-align: center;
     padding: 0 0;
     background-color: #e7e7e7;
+	margin-bottom: 40px;
 }
 
 header {
@@ -48,6 +51,11 @@ header {
 }
 
 ul {
+    padding-left:20px;
+    padding-right:0px;
+}
+
+ol {
     padding-left:20px;
     padding-right:0px;
 }
