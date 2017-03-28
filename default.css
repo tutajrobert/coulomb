@@ -1,8 +1,8 @@
 body {
-    text-align: justify;
+    text-align:justify;
     margin:40px auto;
     max-width:650px;
-    line-height:1.6;
+    line-height:1.7;
     font-size:17px;
     font-family:serif;
     font-weight:400;
@@ -11,7 +11,14 @@ body {
     background-color: #ffffff;
 }
 
-h1,h2,h3 {
+h1 {
+	letter-spacing:6px;
+	line-height:1.0;
+    font-weight:400;
+    color:#444;
+}
+
+h2,h3 {
     line-height:1.2;
     font-family:"Georgia";
     font-weight:400;
@@ -23,12 +30,17 @@ a {
     font-style:oblique;
 }
 
+#menu a {
+	color:white;
+	font-style:oblique;
+}
+
 code {
     color:#666;
     font-family:monospace;
     line-height:1.0;
     font-size:15px;
-	background-color: #e7e7e7;
+	background-color:#e7e7e7;
 }
 
 footer {
@@ -41,7 +53,8 @@ menu {
     font-size:18px;
     text-align: center;
     padding: 0 0;
-    background-color: #e7e7e7;
+	color:white;
+    background-color:#4358CB;
 	margin-bottom: 40px;
 }
 
