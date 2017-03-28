@@ -47,7 +47,7 @@ class Website():
         return self.header
     
     def menu(self, menu_items):
-        menu_string = '<menu>'
+        menu_string = '<div id="menu"><menu>'
         for i in menu_items:
             if i != menu_items[-1]:
                 menu_string += '\n\
@@ -55,7 +55,7 @@ class Website():
             else:
                menu_string += '\n\
     <a href="{}">{}</a>'.format(i[0], i[1])
-        menu_string += '\n</menu>'
+        menu_string += '\n</menu></div>'
         self.menu = menu_string
         return self.menu
     
