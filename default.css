@@ -12,22 +12,40 @@ body {
 }
 
 h1 {
-	letter-spacing:6px;
+
+	text-align:right;
 	line-height:1.0;
     font-weight:400;
+	margin-bottom:15px;
     color:#444;
 }
 
-h2,h3 {
+h2 {
     line-height:1.2;
     font-family:"Georgia";
     font-weight:400;
     color:#222;
 }
+
+h2 {
+    text-align:left;
+    border-top:solid 1px #d6d6d6;
+	margin-bottom:-20px;
+	margin-top:50px;
+    font-weight:400;
+}
+
+h2 span {
+    top:-.75em;
+    padding:0 10px 0 0;
+    background:#fff;
+    position:relative;
+}
          
 a {
     color:#4358CB;
     font-style:oblique;
+	text-decoration:none;
 }
 
 #menu a {
@@ -55,7 +73,7 @@ menu {
     padding: 0 0;
 	color:white;
     background-color:#4358CB;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 
 header {
@@ -67,6 +85,7 @@ ul {
     padding-left:20px;
     padding-right:0px;
 }
+
 
 ol {
     padding-left:20px;
