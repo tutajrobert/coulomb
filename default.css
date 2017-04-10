@@ -7,14 +7,14 @@ body {
     font-family:serif;
     font-weight:400;
     font-style:normal;
-    color:#666;
+    color:#555;
     background-color: #ffffff;
 }
 
 h1 {
-
 	text-align:right;
 	line-height:1.0;
+    font-family:"Georgia";
     font-weight:400;
 	margin-bottom:15px;
     color:#444;
@@ -41,7 +41,16 @@ h2 span {
     background:#fff;
     position:relative;
 }
-         
+
+h3, h4 {
+    line-height:1.2;
+    font-family:"Georgia";
+    font-weight:400;
+    color:#222;
+	margin-top:25px;
+	margin-bottom:0px;
+}
+     
 a {
     color:#4358CB;
     font-style:oblique;
